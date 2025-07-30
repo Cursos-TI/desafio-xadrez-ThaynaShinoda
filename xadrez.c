@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main() {
-
   //Torre = linha reta = 5 casas para direita
   printf("Movimento da Torre\n");
   for(int t = 1; t <= 5; t++) {
@@ -24,5 +23,16 @@ int main() {
     r++;
   } while (r <= 8);
 
+  //Cavalo move em "L" = 2 casas para baixo e 1 para a esquerda
+  printf("\nMovimento do Cavalo\n");
+  int y = 1, x;
+  
+  for(x = 1; x <= 1; x++) {
+    while(y <= 2) {
+      printf("Cavalo: 1 casa para baixo\n");
+      y++;
+    }
+    printf("Cavalo: 1 casa para a esquerda\n");
+  }
   return 0;
 }
